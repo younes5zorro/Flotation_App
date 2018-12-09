@@ -11,6 +11,22 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+
+import { Camera } from '@ionic-native/camera';
+
+const config = {
+  apiKey: 'AIzaSyCF6xsmFwR6gC0W-N0aqNhNDyUZ-y9LCE8',
+  authDomain: 'ionicdb-a7f9e.firebaseapp.com',
+  databaseURL: 'https://ionicdb-a7f9e.firebaseio.com',
+  projectId: 'ionicdb-a7f9e',
+  storageBucket: 'ionicdb-a7f9e.appspot.com',
+  messagingSenderId: '452281129354'
+};
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -21,7 +37,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(config),
+    AngularFireDatabaseModule,
+    AngularFireStorageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -30,8 +49,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage
+
   ],
   providers: [
+    Camera,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

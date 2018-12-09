@@ -1,5 +1,7 @@
 {
   "name": "cam_test",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
