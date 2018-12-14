@@ -1,0 +1,30 @@
+page-intro2 {
+  .letsgo{
+    background-image: url('../../assets/imgs/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+  }
+  .lets_go{
+    position: absolute;
+    bottom: 120px;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+  }
+  .copy{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    color: #024782;
+  }
+  .app_version{
+    color: #be962c;
+  }
+  .btn_managem{
+    width: 50%;
+  }
+}
