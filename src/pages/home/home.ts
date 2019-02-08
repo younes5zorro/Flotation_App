@@ -43,10 +43,12 @@ export class HomePage {
   capture() {
 
     const cameraOptions: CameraOptions = {
-      quality: 50,
+      quality: 100,
       destinationType: this.camera.DestinationType.DATA_URL,
       encodingType: this.camera.EncodingType.JPEG,
       mediaType: this.camera.MediaType.PICTURE,
+      targetHeight: 500,
+      targetWidth: 500
     };
 
     this.camera.getPicture(cameraOptions).then((imageData) => {

@@ -5,6 +5,11 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="capture()">Lets take a picture!</button>
-  <img [src]="captureDataUrl"  *ngIf="captureDataUrl"/>
+  <div class="content">
+
+
+      <button ion-button (click)="capture()" *ngIf="!captureDataUrl">Lets take a picture!</button>
+      <img [src]="captureDataUrl" class="imge" *ngIf="captureDataUrl"/>
+  </div>
+
 </ion-content>

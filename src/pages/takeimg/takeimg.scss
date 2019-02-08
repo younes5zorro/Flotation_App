@@ -1,3 +1,76 @@
 page-takeimg {
 
+  .content{
+    background-image: url('../../assets/imgs/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .imge{
+    height: 500px;
+    width: 500px;
+  }
+  .cmare{
+    height: 150px;
+    width: 150px;
+    // background-color: #ffffff9c;
+    // border: 9px solid #959593;
+    border-radius: 50%;
+    position: absolute;
+    left: 29%;
+    top: 53%;
+
+  }
+
+  .displayig{
+    position: absolute;
+    left: 11%;
+    top: 14%;
+    height: 361px;
+    width: 291px;
+    border: 5px solid #959593;
+  }
+  // .cmare{
+  //   height: 150px;
+  //   width: 150px;
+  //   background-color: #FFF;
+  //   border-radius: 50%;
+  //   position: absolute;
+  //   left: 25%;
+  //   top: 54%;
+
+  // }
+  .cmdaapetit{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    ion-icon {
+      font-size: 50px; //Preferred size here
+    }
+  }
+  .block_cu{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: -4%;
+    .box12{
+      width: 32%;
+      float: left;
+      text-align: center;
+      font-size: 2em;
+      .box_labl{
+        color: #f6b417;
+        border-bottom: 6px solid #f6b417;
+        margin-right: 4px;
+        margin-bottom: 10px;
+
+      }
+      .box_value{
+        color:#132d45;
+      }
+    }
+
+  }
 }
